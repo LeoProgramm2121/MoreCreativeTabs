@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.leo.testmod.testmod"
+			"net.leo.testmod.MoreCreativeTabs"
 		],
 		"client": [
-			"net.leo.testmod.TestModClient"
+			"net.leo.testmod.MoreCreativeTabsClient"
 		],
 		"fabric-datagen": [
-			"net.leo.testmod.TestModDataGenerator"
+			"net.leo.testmod.MoreCreativeTabsDataGenerator"
 		]
 	},
 	"mixins": [
