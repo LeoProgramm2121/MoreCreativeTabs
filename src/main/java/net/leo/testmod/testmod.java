@@ -2,6 +2,8 @@ package net.leo.testmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.leo.testmod.item.ModItemGroups;
+import net.leo.testmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class testmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
