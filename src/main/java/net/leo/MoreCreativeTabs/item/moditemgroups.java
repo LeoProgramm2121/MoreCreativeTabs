@@ -1,7 +1,7 @@
 package net.leo.MoreCreativeTabs.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.leo.MoreCreativeTabs.MoreCreativeTabs;
+import net.leo.MoreCreativeTabs.morecreativetabs;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -10,10 +10,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroups {
+public class moditemgroups {
 
     public static final ItemGroup OP_STUFF = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MoreCreativeTabs.MOD_ID, "opstuff"),
+            new Identifier(morecreativetabs.MOD_ID, "opstuff"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.op"))
                     .icon(() -> new ItemStack(Items.LIGHT)).entries((displayContext, entries) -> {
                         entries.add(Items.COMMAND_BLOCK_MINECART);
@@ -30,7 +30,7 @@ public class ModItemGroups {
 
                     }).build());
 
-    public static final ItemGroup REDSTONE = Registry.register(Registries.ITEM_GROUP, new Identifier(MoreCreativeTabs.MOD_ID,
+    public static final ItemGroup REDSTONE = Registry.register(Registries.ITEM_GROUP, new Identifier(morecreativetabs.MOD_ID,
             "redstone"), FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone")).icon(() -> new ItemStack(Items.REDSTONE))
             .entries((displayContext, entries) -> {
                 entries.add(Items.OBSIDIAN);
@@ -76,6 +76,6 @@ public class ModItemGroups {
 
 
     public static void registerItemGroups() {
-        MoreCreativeTabs.LOGGER.info("Registering Item Groups for " + MoreCreativeTabs.MOD_ID);
+        morecreativetabs.LOGGER.info("Registering Item Groups for " + morecreativetabs.MOD_ID);
     }
 }
