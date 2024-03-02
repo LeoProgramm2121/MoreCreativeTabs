@@ -13,8 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup OperatorStuff = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MoreCreativeTabs.MOD_ID, "ruby"),
+    public static final ItemGroup OP_STUFF = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MoreCreativeTabs.MOD_ID, "opstuff"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.op"))
                     .icon(() -> new ItemStack(Items.LIGHT)).entries((displayContext, entries) -> {
                         entries.add(Items.COMMAND_BLOCK_MINECART);
@@ -31,8 +31,8 @@ public class ModItemGroups {
 
                     }).build());
 
-    public static final ItemGroup Redstone = Registry.register(Registries.ITEM_GROUP, new Identifier(MoreCreativeTabs.MOD_ID,
-            "ruby"), FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone")).icon(() -> new ItemStack(Items.REDSTONE))
+    public static final ItemGroup REDSTONE = Registry.register(Registries.ITEM_GROUP, new Identifier(MoreCreativeTabs.MOD_ID,
+            "redstone"), FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone")).icon(() -> new ItemStack(Items.REDSTONE))
             .entries((displayContext, entries) -> {
                 entries.add(Items.OBSIDIAN);
                 entries.add(Items.IRON_BLOCK);
@@ -61,8 +61,8 @@ public class ModItemGroups {
                 entries.add(Items.NOTE_BLOCK);
                 entries.add(Items.REDSTONE_LAMP);
                 entries.add(Items.ACTIVATOR_RAIL);
-                entries.add(Items.TNT);
-                entries.add(Items.TNT_MINECART);
+                entries.add(Items.SLIME_BLOCK);
+                entries.add(Items.HONEY_BLOCK);
                 entries.add(Items.OAK_PRESSURE_PLATE);
                 entries.add(Items.STONE_PRESSURE_PLATE);
                 entries.add(Items.LIGHT_WEIGHTED_PRESSURE_PLATE);
@@ -70,6 +70,8 @@ public class ModItemGroups {
                 entries.add(Items.LEVER);
                 entries.add(Items.OAK_BUTTON);
                 entries.add(Items.STONE_BUTTON);
+                entries.add(Items.TNT);
+                entries.add(Items.TNT_MINECART);
 
             }).build());
 
