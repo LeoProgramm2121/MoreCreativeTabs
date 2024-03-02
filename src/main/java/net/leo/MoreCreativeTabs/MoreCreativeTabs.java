@@ -1,9 +1,9 @@
-package net.leo.testmod;
+package net.leo.MoreCreativeTabs;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.leo.testmod.item.ModItemGroups;
-import net.leo.testmod.item.ModItems;
+import net.leo.MoreCreativeTabs.item.ModItemGroups;
+import net.leo.MoreCreativeTabs.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

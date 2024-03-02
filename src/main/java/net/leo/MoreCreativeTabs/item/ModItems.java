@@ -1,8 +1,8 @@
-package net.leo.testmod.item;
+package net.leo.MoreCreativeTabs.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.leo.testmod.MoreCreativeTabs;
+import net.leo.MoreCreativeTabs.MoreCreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
