@@ -2,6 +2,7 @@ package net.leo.testmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.leo.testmod.MoreCreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -11,6 +12,25 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+
+    public static final ItemGroup OperatorStuff = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MoreCreativeTabs.MOD_ID, "ruby"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.op"))
+                    .icon(() -> new ItemStack(Items.LIGHT)).entries((displayContext, entries) -> {
+                        entries.add(Items.COMMAND_BLOCK_MINECART);
+                        entries.add(Items.COMMAND_BLOCK);
+                        entries.add(Items.CHAIN_COMMAND_BLOCK);
+                        entries.add(Items.REPEATING_COMMAND_BLOCK);
+                        entries.add(Items.LIGHT);
+                        entries.add(Items.JIGSAW);
+                        entries.add(Items.STRUCTURE_BLOCK);
+                        entries.add(Items.STRUCTURE_VOID);
+                        entries.add(Items.BARRIER);
+                        entries.add(Items.DEBUG_STICK);
+                        entries.add(Items.LIGHT);
+
+                    }).build());
+
     public static final ItemGroup Redstone = Registry.register(Registries.ITEM_GROUP, new Identifier(MoreCreativeTabs.MOD_ID,
             "ruby"), FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone")).icon(() -> new ItemStack(Items.REDSTONE))
             .entries((displayContext, entries) -> {
