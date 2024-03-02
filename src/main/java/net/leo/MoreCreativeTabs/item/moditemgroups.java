@@ -12,23 +12,6 @@ import net.minecraft.util.Identifier;
 
 public class moditemgroups {
 
-    public static final ItemGroup OP_STUFF = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(morecreativetabs.MOD_ID, "opstuff"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.op"))
-                    .icon(() -> new ItemStack(Items.LIGHT)).entries((displayContext, entries) -> {
-                        entries.add(Items.COMMAND_BLOCK_MINECART);
-                        entries.add(Items.COMMAND_BLOCK);
-                        entries.add(Items.CHAIN_COMMAND_BLOCK);
-                        entries.add(Items.REPEATING_COMMAND_BLOCK);
-                        entries.add(Items.LIGHT);
-                        entries.add(Items.JIGSAW);
-                        entries.add(Items.STRUCTURE_BLOCK);
-                        entries.add(Items.STRUCTURE_VOID);
-                        entries.add(Items.BARRIER);
-                        entries.add(Items.DEBUG_STICK);
-
-                    }).build());
-
     public static final ItemGroup REDSTONE = Registry.register(Registries.ITEM_GROUP, new Identifier(morecreativetabs.MOD_ID,
             "redstone"), FabricItemGroup.builder().displayName(Text.translatable("itemGroup.redstone")).icon(() -> new ItemStack(Items.REDSTONE))
             .entries((displayContext, entries) -> {
@@ -73,6 +56,22 @@ public class moditemgroups {
 
             }).build());
 
+    public static final ItemGroup OP_STUFF = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(morecreativetabs.MOD_ID, "opstuff"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.op"))
+                    .icon(() -> new ItemStack(Items.LIGHT)).entries((displayContext, entries) -> {
+                        entries.add(Items.COMMAND_BLOCK_MINECART);
+                        entries.add(Items.COMMAND_BLOCK);
+                        entries.add(Items.CHAIN_COMMAND_BLOCK);
+                        entries.add(Items.REPEATING_COMMAND_BLOCK);
+                        entries.add(Items.LIGHT);
+                        entries.add(Items.JIGSAW);
+                        entries.add(Items.STRUCTURE_BLOCK);
+                        entries.add(Items.STRUCTURE_VOID);
+                        entries.add(Items.BARRIER);
+                        entries.add(Items.DEBUG_STICK);
+
+                    }).build());
 
     public static void registerItemGroups() {
         morecreativetabs.LOGGER.info("Registering Item Groups for " + morecreativetabs.MOD_ID);
