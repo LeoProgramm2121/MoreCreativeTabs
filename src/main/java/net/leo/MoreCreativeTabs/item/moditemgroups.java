@@ -26,7 +26,6 @@ public class moditemgroups {
                         entries.add(Items.STRUCTURE_VOID);
                         entries.add(Items.BARRIER);
                         entries.add(Items.DEBUG_STICK);
-                        entries.add(Items.LIGHT);
 
                     }).build());
 
