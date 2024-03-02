@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
-	"id": "testmod",
+	"id": "morecreativetabs",
 	"version": "${version}",
-	"name": "TestMod",
-	"description": "Coole Mod von LeoProgramm2121",
+	"name": "MoreCreativeTabs",
+	"description": "Fügt mehrere Custom Tabs im Creative Inventar hinzu.",
 	"authors": [
 		"LeoProgramm2121"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/LeoProgramm2121/MoreCreativeTabs",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",

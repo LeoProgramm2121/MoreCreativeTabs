@@ -41,6 +41,15 @@ public class ModItemGroups {
                 entries.add(Items.NOTE_BLOCK);
                 entries.add(Items.REDSTONE_LAMP);
                 entries.add(Items.ACTIVATOR_RAIL);
+                entries.add(Items.TNT);
+                entries.add(Items.TNT_MINECART);
+                entries.add(Items.OAK_PRESSURE_PLATE);
+                entries.add(Items.STONE_PRESSURE_PLATE);
+                entries.add(Items.LIGHT_WEIGHTED_PRESSURE_PLATE);
+                entries.add(Items.HEAVY_WEIGHTED_PRESSURE_PLATE);
+                entries.add(Items.LEVER);
+                entries.add(Items.OAK_BUTTON);
+                entries.add(Items.STONE_BUTTON);
 
             }).build());
 
